@@ -10,15 +10,15 @@ public class WriteTablePedidos {
 	public class WriteFile {
 
 		public static void main(String[] args) {
-			File file = new File("C:\\Users\\dcortina\\Desktop\\Curso\\ProyectosEclipse\\Ejercicios", "tablaPedidos.csv");
+			File tablaPedidos = new File("C:\\Users\\dcortina\\Desktop\\Curso\\ProyectosEclipse\\Ejercicios", "tablaPedidos.csv");
 			try {
 				// ESTOY LEYENDO DESDE EL TECLADO
 				InputStreamReader isr = new InputStreamReader(System.in);
 				BufferedReader in = new BufferedReader(isr);
 				// IMPRIMIR
-				PrintWriter out = new PrintWriter(new FileWriter(file));
+				PrintWriter out = new PrintWriter(new FileWriter(tablaPedidos));
 				String s;
-				System.out.print("Enter file text. ");
+				System.out.print("Enter file tablaPedidos.csv ");
 				System.out.println("[Type ctrl-d to stop.]");
 				while ((s = in.readLine()) != null) {
 					out.println(s); // println() escribe dentro del archivo

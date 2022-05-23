@@ -12,7 +12,7 @@ public class ReadPedidos {
 
 		try {
 			FileReader f = new FileReader(file);
-			System.out.println("encontre el archivo");
+			System.out.println("Archivo encontrado");
 			// el FileReader, en sus metodos de read() devuelve un INPUTSTREAMREADER
 			BufferedReader bf = new BufferedReader(f);
 			// el BufferedReader tiene el metodo readLine() que devuelve un String
